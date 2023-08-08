@@ -6,10 +6,24 @@ keys.forEach(function(key){
 })
 
 // Write named functions that change the color of the keys below
-
+const keyPlay = getElementsByClassName('')
+eventTarget.addEventListener('mousedown', ()=> {
+  if(keyPlay !== "blue"){
+    keyPlay.style.color = "blue" 
+  } else {
+    keyPlay.style.color = "red"
+  }
+})
 
 // Write a named function with event handler properties
-
+const keyReturn = getElementById('')
+eventTarget.addEventListener('mouseup', ()=> {
+  if(keyReturn !== "yelow"){
+    keyReturn.style.color = "yellow"
+  } else {
+    keyReturn.style.color = "green"
+  }
+})
 
 // Write a loop that runs the array elements through the function
 
@@ -29,13 +43,19 @@ nextThree.hidden = true;
 startOver.hidden= true;
 
 // Write anonymous event handler property and function for the first progress button
-
+document.getElementById('first-next-line').hidden = function nextOne(e) {
+  alert ('');
+}
 
 // Write anonymous event handler property and function for the second progress button
-
+document.getElementById('second-text-line').on = function nextTwo(e) {
+  alert ('');
+}
 
 // Write anonymous event handler property and function for the third progress button
-
+document.getElementById('third-next-line').on = function nextThree(e) {
+  alert (''); 
+}
 
 // This is the event handler property and function for the startOver button
 startOver.onclick = function() {
