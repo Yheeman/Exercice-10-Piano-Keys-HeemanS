@@ -26,8 +26,9 @@ eventTarget.addEventListener('mouseup', ()=> {
 })
 
 // Write a loop that runs the array elements through the function
-
-
+keys.forEach(function(key){
+  notes.push(document.getElementById(key));
+})
 // These variables store the buttons that progress the user through the lyrics
 let nextOne = document.getElementById('first-next-line');
 let nextTwo = document.getElementById('second-next-line');
