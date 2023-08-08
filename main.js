@@ -8,22 +8,12 @@ keys.forEach(function(key){
 // Write named functions that change the color of the keys below
 const keyPlay = getElementsByClassName('')
 eventTarget.addEventListener('mousedown', ()=> {
-  if(keyPlay !== "blue"){
-    keyPlay.style.color = "blue" 
-  } else {
-    keyPlay.style.color = "red"
-  }
-})
-
+e.target.style.backgroundColor= "blue"
+}
 // Write a named function with event handler properties
 const keyReturn = getElementById('')
 eventTarget.addEventListener('mouseup', ()=> {
-  if(keyReturn !== "yelow"){
-    keyReturn.style.color = "yellow"
-  } else {
-    keyReturn.style.color = "green"
-  }
-})
+e.target.style.backgroundColor="white"
 
 // Write a loop that runs the array elements through the function
 keys.forEach(function(key){
