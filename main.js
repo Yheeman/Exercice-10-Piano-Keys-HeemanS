@@ -1,7 +1,7 @@
 // The keys and notes variables store the piano keys
 const keys = ['c-key', 'd-key', 'e-key', 'f-key', 'g-key', 'a-key', 'b-key', 'high-c-key', 'c-sharp-key', 'd-sharp-key', 'f-sharp-key', 'g-sharp-key', 'a-sharp-key'];
 const notes = [];
-keys.forEach(function(key){
+keys.forEach(function(key) {
   notes.push(document.getElementById(key));
 })
 
@@ -12,7 +12,11 @@ e.target.style.backgroundColor= "blue"
 })
 // Write a named function with event handler properties
 const keyReturn = getElementByClassName('piano')
+<<<<<<< HEAD
 eventTarget.addEventListener('mouseup', ()=> {
+=======
+e.target.addEventListener('mouseup', ()=> {
+>>>>>>> c2a22dffa88820e5b1c31be8ade51d0821f948e2
 e.target.style.backgroundColor="white"
 })
 // Write a loop that runs the array elements through the function
@@ -31,7 +35,8 @@ let lastLyric = document.getElementById('column-optional');
 // These statements are "hiding" all the progress buttons, but the first one
 nextTwo.hidden = true;
 nextThree.hidden = true;
-startOver.hidden= true;
+startOver.hidden = true;
+
 
 // Write anonymous event handler property and function for the first progress button
 document.getElementById('first-next-line').hidden = function nextOne(e) {
@@ -52,7 +57,7 @@ document.getElementById('third-next-line').on = function nextThree(e) {
 startOver.onclick = function() {
   nextOne.hidden = false;
   startOver.hidden = true;
-   document.getElementById('word-one').innerHTML = 'HAP-';
+  document.getElementById('word-one').innerHTML = 'HAP-';
   document.getElementById('letter-note-one').innerHTML = 'G';
   document.getElementById('word-two').innerHTML = 'PY';
   document.getElementById('letter-note-two').innerHTML = 'G';
