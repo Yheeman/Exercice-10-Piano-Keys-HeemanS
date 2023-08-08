@@ -17,7 +17,7 @@ e.target.style.backgroundColor="white"
 })
 // Write a loop that runs the array elements through the function
 keys.forEach(function(key){
-  notes.push(document.getElementById(key));
+  notes.push(document.getElementByClassName('piano'));
 })
 // These variables store the buttons that progress the user through the lyrics
 let nextOne = document.getElementById('first-next-line');
