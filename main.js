@@ -6,15 +6,15 @@ keys.forEach(function(key){
 })
 
 // Write named functions that change the color of the keys below
-const keyPlay = getElementsByClassName('')
-eventTarget.addEventListener('mousedown', ()=> {
+const keyPlay = getElementsByClassName('piano')
+e.target.addEventListener('mousedown', ()=> {
 e.target.style.backgroundColor= "blue"
-}
+})
 // Write a named function with event handler properties
-const keyReturn = getElementById('')
+const keyReturn = getElementByClassName('piano')
 eventTarget.addEventListener('mouseup', ()=> {
 e.target.style.backgroundColor="white"
-
+})
 // Write a loop that runs the array elements through the function
 keys.forEach(function(key){
   notes.push(document.getElementById(key));
