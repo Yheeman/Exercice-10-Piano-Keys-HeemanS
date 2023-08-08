@@ -6,17 +6,13 @@ keys.forEach(function(key) {
 })
 
 // Write named functions that change the color of the keys below
-const keyPlay = getElementsByClassName('piano')
+const keyPlay(e) = getElementsByClassName('piano')
 e.target.addEventListener('mousedown', ()=> {
 e.target.style.backgroundColor= "blue"
 })
 // Write a named function with event handler properties
-const keyReturn = getElementByClassName('piano')
-<<<<<<< HEAD
-eventTarget.addEventListener('mouseup', ()=> {
-=======
+const keyReturn(e)= getElementByClassName('piano')
 e.target.addEventListener('mouseup', ()=> {
->>>>>>> c2a22dffa88820e5b1c31be8ade51d0821f948e2
 e.target.style.backgroundColor="white"
 })
 // Write a loop that runs the array elements through the function
@@ -39,19 +35,25 @@ startOver.hidden = true;
 
 
 // Write anonymous event handler property and function for the first progress button
-document.getElementById('first-next-line').hidden = function nextOne(e) {
-  alert ('');
-}
+nextOne.addEventListener('click', ()=> {
+  if(nextOne.hidden !== "true"){
+    nextTwo.hidden === "true"
+  } else {
+    nextTwo.hidden !== "true"
+  }
+})
 
 // Write anonymous event handler property and function for the second progress button
-document.getElementById('second-text-line').on = function nextTwo(e) {
-  alert ('');
-}
+nextTwo.addEventListener('click', ()=> {
+  if(nextTwo.hidden !== "true"){
+    nextThree.hidden === "true"
+  } else {
+    nextThree.hidden !== "true"
+  }
+})
 
 // Write anonymous event handler property and function for the third progress button
-document.getElementById('third-next-line').on = function nextThree(e) {
-  alert (''); 
-}
+
 
 // This is the event handler property and function for the startOver button
 startOver.onclick = function() {
@@ -65,8 +67,8 @@ startOver.onclick = function() {
   document.getElementById('letter-note-three').innerHTML = 'A';
   document.getElementById('word-four').innerHTML = 'DAY';
   document.getElementById('letter-note-four').innerHTML = 'G';
-  document.getElementById('word-five').innerHTML = 'TO';
+  document.getElementById('word-five').innerHTML = 'DEAR';
   document.getElementById('letter-note-five').innerHTML = 'C';
-  document.getElementById('word-six').innerHTML = 'YOU!';
+  document.getElementById('word-six').innerHTML = 'FRI-';
   document.getElementById('letter-note-six').innerHTML = 'B';
 }
