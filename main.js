@@ -6,23 +6,22 @@ keys.forEach(function(key) {
 })
 
 // Write named functions that change the color of the keys below
-const keyPlay(e) = getElementsByClassName('piano')
-e.target.addEventListener('mousedown', ()=> {
-e.target.style.backgroundColor= "blue"
-})
+function keyPlay(e) {
+ e.target.style.backgroundColor = "blue";
+}
+
 // Write a named function with event handler properties
-
-const keyReturn(e) = getElementByClassName('piano')
-
-const keyReturn(e)= getElementByClassName('piano')
-
-e.target.addEventListener('mouseup', ()=> {
-e.target.style.backgroundColor="white"
-})
+function keyReturn(e) {
+  e.target.style.backgroundColor = "";
+}
+//Create note functions
+function addEventTouch(note) {
+note.addEventListener('mousedown', keyPlay);
+note.addEventListener('mouseup', keyReturn);
+}
 // Write a loop that runs the array elements through the function
-keys.forEach(function(notes){
-  notes.push(document.getElementByClassName('piano'));
-})
+notes.forEach(addEventTouch);
+
 // These variables store the buttons that progress the user through the lyrics
 let nextOne = document.getElementById('first-next-line');
 let nextTwo = document.getElementById('second-next-line');
@@ -57,7 +56,13 @@ nextTwo.addEventListener('click', ()=> {
 })
 
 // Write anonymous event handler property and function for the third progress button
-
+nextThree.addEventListener('click', ()=> {
+  if(nextThree.hidden !== "true"){
+    nextOver.hidden === "true"
+  } else {
+    nextOver.hidden !== "true"
+  }
+})
 
 // This is the event handler property and function for the startOver button
 startOver.onclick = function() {

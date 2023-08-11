@@ -43,28 +43,32 @@ You’re a web developer who has been hired by a music education company. This c
 <br>Add a statement to the event handler function for nextTwo that changes the display property of lastLyric to `'inline-block'`.
 15. A click event firing on the second button must also change the music notes to guide the piano student through the song.
 <br>Add the following changes to the `nextTwo` event handler function so the musical notes change when the button is clicked:
-    * Change the content of the element with an ID of letter-note-three to G.
-    * Change the content of the element with an ID of letter-note-four to E.
-    * Change the content of the element with an ID of letter-note-five to C.
-    * Change the content of the element with an ID of letter-note-six to B.
+    * Change the content of the element with an ID of `letter-note-three` to G.
+    * Change the content of the element with an ID of `letter-note-four` to E.
+    * Change the content of the element with an ID of `letter-note-five` to C.
+    * Change the content of the element with an ID of `letter-note-six` to B.
 16. Create an event handler property with a click event on the nextThree element.
 17. Using an anonymous event handler function, make the following changes to the button that appears when `nextThree` is clicked:
     * Reveal the `startOver` button by changing the .hidden property to make the `startOver` button appear.
     * Hide the `nextThree` button by changing the `.hidden` property to hide the `nextThree` button.
 18. Add the following changes to the `nextThree` event handler function so the lyrics change when this button is clicked.
-    * Change the content of the element with an ID of word-one to HAP-.
-    * Change the content of the element with an ID of word-two to PY.
-    * Change the content of the element with an ID of word-three to BIRTH.
-    * Change the content of the element with an ID of word-four to DAY
-    * Change the content of the element with an ID of word-five to TO.
-    * Change the content of the element with an ID of word-six to YOU!.
+    * Change the content of the element with an ID of `word-one` to HAP-.
+    * Change the content of the element with an ID of `word-two` to PY.
+    * Change the content of the element with an ID of `word-three` to BIRTH.
+    * Change the content of the element with an ID of `word-four` to DAY
+    * Change the content of the element with an ID of `word-five` to TO.
+    * Change the content of the element with an ID of `word-six` to YOU!.
 19. Add the following changes to the nextThree event handler function so the musical notes change when the button is clicked.
-    * Change the content of the element with an ID of letter-note-one to F.
-    * Change the content of the element with an ID of letter-note-two to F.
-    * Change the content of the element with an ID of letter-note-three to E.
-    * Change the content of the element with an ID of letter-note-four to C.
-    * Change the content of the element with an ID of letter-note-five to D.
-    * Change the content of the element with an ID of letter-note-six to C.
-20. Now you have the lyrics HAP-PY BIRTH-DAY TO YOU! -END — that couldn’t be right! To finish the line you must get rid of the “-end” in the song box.
-<br>Add a statement to the event handler function for nextThree that changes the display property of lastLyric back to 'none'.
+    * Change the content of the element with an ID of `letter-note-one` to F.
+    * Change the content of the element with an ID of `letter-note-two` to F.
+    * Change the content of the element with an ID of `letter-note-three` to E.
+    * Change the content of the element with an ID of `letter-note-four` to C.
+    * Change the content of the element with an ID of `letter-note-five` to D.
+    * Change the content of the element with an ID of `letter-note-six` to C.
+20. Now you have the lyrics **HAP-PY BIRTH-DAY TO YOU! -END** — that couldn’t be right! To finish the line you must get rid of the “-end” in the song box.
+<br>Add a statement to the event handler function for `nextThree` that changes the `display` property of `lastLyric` back to 'none'.
 21. Congrats, you’ve completed the Piano Player! Play around with the piano and the song box to fire all the events.
+
+### Other instructions (addenda)
+22. Write the `keyPlay` and `keyReturn` functions in `functions.js` located at the root folder. Make sure to include it in your `index.html` right before the `main.js`.
+24. In the `startOver.onclick` event function, hide the last lyric and all buttons except `nextOne`.
